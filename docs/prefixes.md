@@ -1,0 +1,17 @@
+PREFIX : <https://w3id.org/gelmat/data/>
+PREFIX data: <https://w3id.org/gelmat/data/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX emmo: <http://emmo.info/emmo#>
+PREFIX gmat: <https://w3id.org/gelmat/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX pmat: <https://w3id.org/polymat/>
+PREFIX pmdco: <https://w3id.org/pmd/co/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>

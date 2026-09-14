@@ -1,0 +1,1389 @@
+@prefix : <https://w3id.org/gelmat/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/gelmat/data/> .
+
+<https://w3id.org/gelmat/data> rdf:type owl:Ontology ;
+                               owl:imports <https://w3id.org/gelmat/1.1.0> ;
+                               rdfs:label "Gelmat aerogel example data"@en .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/gelmat/data#52_h
+<https://w3id.org/gelmat/data#52_h> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time> ;
+                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "187200.0"^^xsd:double ;
+                                                                              rdfs:label "187200 s"@en .
+
+
+###  https://w3id.org/gelmat/data#_60ml/h
+<https://w3id.org/gelmat/data#_60ml/h> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerSecond-Time> ;
+                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "1.6667E-8"^^xsd:double ;
+                                                                                 rdfs:label "1.6667E-8 m3/s"@en .
+
+
+###  https://w3id.org/gelmat/data/Activation_Energy_E
+:Activation_Energy_E rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/gelmat/ActivationEnergy> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_E ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Activation_Energy_E ;
+                     rdfs:label "Activation Energy (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/Activation_Energy_F
+:Activation_Energy_F rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/gelmat/ActivationEnergy> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_F ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Activation_Energy_F ;
+                     rdfs:label "Activation Energy (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/Activation_Energy_G
+:Activation_Energy_G rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/gelmat/ActivationEnergy> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_G ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Activation_Energy_G ;
+                     rdfs:label "Activation Energy (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/Activation_Energy_H
+:Activation_Energy_H rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/gelmat/ActivationEnergy> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_H ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Activation_Energy_H ;
+                     rdfs:label "Activation Energy (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Duration_A
+:Aging_Duration_A rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/gelmat/Duration> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_A ;
+                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_48h ;
+                  rdfs:label "Aging Duration (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Duration_B
+:Aging_Duration_B rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/gelmat/Duration> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_B ;
+                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_48h ;
+                  rdfs:label "Aging Duration (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Duration_C
+:Aging_Duration_C rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/gelmat/Duration> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_C ;
+                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_48h ;
+                  rdfs:label "Aging Duration (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Duration_D
+:Aging_Duration_D rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/gelmat/Duration> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_D ;
+                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_48h ;
+                  rdfs:label "Aging Duration (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Temperature_A
+:Aging_Temperature_A rdf:type owl:NamedIndividual ,
+                              <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_A ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_50C ;
+                     rdfs:label "Aging Temperature (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Temperature_B
+:Aging_Temperature_B rdf:type owl:NamedIndividual ,
+                              <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_B ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_50C ;
+                     rdfs:label "Aging Temperature (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Temperature_C
+:Aging_Temperature_C rdf:type owl:NamedIndividual ,
+                              <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_C ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_50C ;
+                     rdfs:label "Aging Temperature (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/Aging_Temperature_D
+:Aging_Temperature_D rdf:type owl:NamedIndividual ,
+                              <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                     <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Aging_D ;
+                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_50C ;
+                     rdfs:label "Aging Temperature (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/Ammonium_Hydroxide_01
+:Ammonium_Hydroxide_01 rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/AmmoniumHydroxide> ;
+                       rdfs:label "Ammonium Hydroxide"@en .
+
+
+###  https://w3id.org/gelmat/data/Arrhenius_Constant_E
+:Arrhenius_Constant_E rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/ArrheniusConstant> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_E ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Arrhenius_Constant_E ;
+                      rdfs:label "Arrhenius Constant (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/Arrhenius_Constant_F
+:Arrhenius_Constant_F rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/ArrheniusConstant> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_F ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Arrhenius_Constant_F ;
+                      rdfs:label "Arrhenius Constant (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/Arrhenius_Constant_G
+:Arrhenius_Constant_G rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/ArrheniusConstant> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_G ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Arrhenius_Constant_G ;
+                      rdfs:label "Arrhenius Constant (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/Arrhenius_Constant_H
+:Arrhenius_Constant_H rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/ArrheniusConstant> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_H ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_Arrhenius_Constant_H ;
+                      rdfs:label "Arrhenius Constant (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/Dryer_01
+:Dryer_01 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/gelmat/Dryer> ;
+          rdfs:label "Laboratory Dryer"@en .
+
+
+###  https://w3id.org/gelmat/data/Drying_Temperature_A
+:Drying_Temperature_A rdf:type owl:NamedIndividual ,
+                               <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Drying_A ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_100C ;
+                      rdfs:label "Drying Temperature (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/Drying_Temperature_B
+:Drying_Temperature_B rdf:type owl:NamedIndividual ,
+                               <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Drying_B ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_100C ;
+                      rdfs:label "Drying Temperature (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/Drying_Temperature_C
+:Drying_Temperature_C rdf:type owl:NamedIndividual ,
+                               <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Drying_C ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_100C ;
+                      rdfs:label "Drying Temperature (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/Drying_Temperature_D
+:Drying_Temperature_D rdf:type owl:NamedIndividual ,
+                               <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> ;
+                      <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Drying_D ;
+                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_100C ;
+                      rdfs:label "Drying Temperature (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/Experiment_01
+:Experiment_01 rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Experiment> ;
+               <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Synthesis_Sample_A ,
+                                                            :MTMS_Synthesis_Sample_B ,
+                                                            :MTMS_Synthesis_Sample_C ,
+                                                            :MTMS_Synthesis_Sample_D ;
+               <http://www.w3.org/ns/prov#generated> :MTMS_Aerogel_A ,
+                                                     :MTMS_Aerogel_B ,
+                                                     :MTMS_Aerogel_C ,
+                                                     :MTMS_Aerogel_D ;
+               rdfs:comment "Nina B. - MTMS Aerogel synthesis with 4 samples (A-D) varying MTMS/MeOH ratios"@en ;
+               rdfs:label "Experiment 01"@en .
+
+
+###  https://w3id.org/gelmat/data/FlowRate_01
+:FlowRate_01 rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/gelmat/VolumetricFlowRate> ;
+             <http://purl.obolibrary.org/obo/RO_0000052> :Syringe_Pump_01 ;
+             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <https://w3id.org/gelmat/data#_60ml/h> ;
+             rdfs:label "FlowRate"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_A
+:H2O_MTMS_MolarRatio_A rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_A ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_59_75 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample A"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_B
+:H2O_MTMS_MolarRatio_B rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_B ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_59_75 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample B"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_C
+:H2O_MTMS_MolarRatio_C rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_C ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_59_75 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample C"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_D
+:H2O_MTMS_MolarRatio_D rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_D ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_59_75 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample D"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_E
+:H2O_MTMS_MolarRatio_E rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_E ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_8_09 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample E"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_F
+:H2O_MTMS_MolarRatio_F rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_F ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_9_71 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample F"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_G
+:H2O_MTMS_MolarRatio_G rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_G ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_11_33 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample G"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/H2O_MTMS_MolarRatio_H
+:H2O_MTMS_MolarRatio_H rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/gelmat/MolarRatio> ;
+                       <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_H ;
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_12_94 ;
+                       <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                    :Water_01 ;
+                       rdfs:comment "Molar ratio r of H2O to MTMS for Sample H"@en ;
+                       rdfs:label "H2O to MTMS Molar Ratio (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_01
+:MTMS_01 rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/gelmat/MTMS> ;
+         <https://w3id.org/polymat/hasAcronym> "MTMS" ;
+         rdfs:label "Trimethoxymethylsilane"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_A
+:MTMS_Aerogel_A rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample A)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_B
+:MTMS_Aerogel_B rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample B)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_C
+:MTMS_Aerogel_C rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample C)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_D
+:MTMS_Aerogel_D rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample D)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_E
+:MTMS_Aerogel_E rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample E)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_F
+:MTMS_Aerogel_F rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample F)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_G
+:MTMS_Aerogel_G rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample G)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aerogel_H
+:MTMS_Aerogel_H rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/OrganosilicaAerogel> ;
+                rdfs:label "MTMS Aerogel (Sample H)"@en ;
+                <https://w3id.org/gelmat/hasPrecursor> :MTMS_01 .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_A
+:MTMS_Aging_A rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Oven ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_A ;
+              rdfs:label "MTMS Aging (Sample A)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_A .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_B
+:MTMS_Aging_B rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Supercritical_Dryer ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_B ;
+              rdfs:label "MTMS Aging (Sample B)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_B .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_C
+:MTMS_Aging_C rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_C ;
+              rdfs:label "MTMS Aging (Sample C)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_C .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_D
+:MTMS_Aging_D rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_D ;
+              rdfs:label "MTMS Aging (Sample D)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_D .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_E
+:MTMS_Aging_E rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_E ;
+              rdfs:label "MTMS Aging (Sample E)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_E .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_F
+:MTMS_Aging_F rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_F ;
+              rdfs:label "MTMS Aging (Sample F)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_F .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_G
+:MTMS_Aging_G rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_G ;
+              rdfs:label "MTMS Aging (Sample G)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_G .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Aging_H
+:MTMS_Aging_H rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/Aging> ;
+              <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+              <https://w3id.org/gelmat/usesSubstance> :MTMS_Wet_Gel_H ;
+              rdfs:label "MTMS Aging (Sample H)"@en ;
+              <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Hydrogel_H .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_A
+:MTMS_Alcogel_A rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_B
+:MTMS_Alcogel_B rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_C
+:MTMS_Alcogel_C rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_D
+:MTMS_Alcogel_D rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_E
+:MTMS_Alcogel_E rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_F
+:MTMS_Alcogel_F rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_G
+:MTMS_Alcogel_G rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Alcogel_H
+:MTMS_Alcogel_H rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Alcogel> ;
+                rdfs:label "MTMS Alcogel (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_A
+:MTMS_Drying_A rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_A ;
+               <https://w3id.org/gelmat/requiresEquipment> :Oven ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_A ;
+               rdfs:label "MTMS Drying (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_B
+:MTMS_Drying_B rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_B ;
+               <https://w3id.org/gelmat/requiresEquipment> :Supercritical_Dryer ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_B ;
+               rdfs:label "MTMS Drying (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_C
+:MTMS_Drying_C rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_C ;
+               <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_C ;
+               rdfs:label "MTMS Drying (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_D
+:MTMS_Drying_D rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_D ;
+               <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_D ;
+               rdfs:label "MTMS Drying (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_E
+:MTMS_Drying_E rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_E ;
+               <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_E ;
+               rdfs:label "MTMS Drying (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_F
+:MTMS_Drying_F rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_F ;
+               <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_F ;
+               rdfs:label "MTMS Drying (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_G
+:MTMS_Drying_G rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_G ;
+               <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_G ;
+               rdfs:label "MTMS Drying (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Drying_H
+:MTMS_Drying_H rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/polymat/Drying> ;
+               <https://w3id.org/gelmat/producesAerogel> :MTMS_Aerogel_H ;
+               <https://w3id.org/gelmat/requiresEquipment> :Dryer_01 ;
+               <https://w3id.org/gelmat/usesSubstance> :MTMS_Alcogel_H ;
+               rdfs:label "MTMS Drying (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_A
+:MTMS_Gelation_A rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_A ;
+                 rdfs:label "MTMS Gelation (Sample A)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_A .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_B
+:MTMS_Gelation_B rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_B ;
+                 rdfs:label "MTMS Gelation (Sample B)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_B .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_C
+:MTMS_Gelation_C rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_C ;
+                 rdfs:label "MTMS Gelation (Sample C)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_C .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_D
+:MTMS_Gelation_D rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_D ;
+                 rdfs:label "MTMS Gelation (Sample D)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_D .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_E
+:MTMS_Gelation_E rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_E ;
+                 rdfs:comment "Gelation time approximation: tg = 17211e^-0.041Tg (R^2 = 0.95)"@en ;
+                 rdfs:label "MTMS Gelation (Sample E)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_E .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_F
+:MTMS_Gelation_F rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_F ;
+                 rdfs:comment "Gelation time approximation: tg = 7611.1e^-0.034Tg (R^2 = 0.94)"@en ;
+                 rdfs:label "MTMS Gelation (Sample F)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_F .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_G
+:MTMS_Gelation_G rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_G ;
+                 rdfs:comment "Gelation time approximation: tg = 6149.5e^-0.038Tg (R^2 = 0.98)"@en ;
+                 rdfs:label "MTMS Gelation (Sample G)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_G .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Gelation_H
+:MTMS_Gelation_H rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Gelation> ;
+                 <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                 <https://w3id.org/gelmat/usesSubstance> :Ammonium_Hydroxide_01 ,
+                                                          :MTMS_Sol_H ;
+                 rdfs:comment "Gelation time approximation: tg = 3453.2e^-0.0330Tg (R^2 = 0.94)"@en ;
+                 rdfs:label "MTMS Gelation (Sample H)"@en ;
+                 <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Wet_Gel_H .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_A
+:MTMS_Hydrogel_A rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_B
+:MTMS_Hydrogel_B rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_C
+:MTMS_Hydrogel_C rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_D
+:MTMS_Hydrogel_D rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_E
+:MTMS_Hydrogel_E rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_F
+:MTMS_Hydrogel_F rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_G
+:MTMS_Hydrogel_G rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Hydrogel_H
+:MTMS_Hydrogel_H rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/Hydrogel> ;
+                 rdfs:label "MTMS Hydrogel (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_MeOH_VolumeRatio_A
+:MTMS_MeOH_VolumeRatio_A rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/VolumeRatio> ;
+                         <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_A ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to10 ;
+                         <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                      :Methanol_01 ;
+                         rdfs:comment "Volume ratio of MTMS to Methanol for Sample A"@en ;
+                         rdfs:label "MTMS to Methanol Volume Ratio (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_MeOH_VolumeRatio_B
+:MTMS_MeOH_VolumeRatio_B rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/VolumeRatio> ;
+                         <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_B ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to15 ;
+                         <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                      :Methanol_01 ;
+                         rdfs:comment "Volume ratio of MTMS to Methanol for Sample B"@en ;
+                         rdfs:label "MTMS to Methanol Volume Ratio (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_MeOH_VolumeRatio_C
+:MTMS_MeOH_VolumeRatio_C rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/VolumeRatio> ;
+                         <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_C ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to20 ;
+                         <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                      :Methanol_01 ;
+                         rdfs:comment "Volume ratio of MTMS to Methanol for Sample C"@en ;
+                         rdfs:label "MTMS to Methanol Volume Ratio (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_MeOH_VolumeRatio_D
+:MTMS_MeOH_VolumeRatio_D rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/VolumeRatio> ;
+                         <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_D ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to25 ;
+                         <https://w3id.org/gelmat/hasRatioComponent> :MTMS_01 ,
+                                                                      :Methanol_01 ;
+                         rdfs:comment "Volume ratio of MTMS to Methanol for Sample D"@en ;
+                         rdfs:label "MTMS to Methanol Volume Ratio (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_A
+:MTMS_Sol_A rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_B
+:MTMS_Sol_B rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_C
+:MTMS_Sol_C rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_D
+:MTMS_Sol_D rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_E
+:MTMS_Sol_E rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_F
+:MTMS_Sol_F rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_A
+:MTMS_Sol_Formation_A rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample A)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_A .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_B
+:MTMS_Sol_Formation_B rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample B)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_B .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_C
+:MTMS_Sol_Formation_C rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample C)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_C .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_D
+:MTMS_Sol_Formation_D rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample D)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_D .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_E
+:MTMS_Sol_Formation_E rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample E)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_E .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_F
+:MTMS_Sol_Formation_F rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample F)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_F .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_G
+:MTMS_Sol_Formation_G rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample G)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_G .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_Formation_H
+:MTMS_Sol_Formation_H rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/gelmat/SolFormation> ;
+                      <https://w3id.org/gelmat/requiresEquipment> :Syringe_Pump_01 ;
+                      <https://w3id.org/gelmat/usesSubstance> :MTMS_01 ,
+                                                               :Methanol_01 ,
+                                                               :Oxalic_Acid_01 ,
+                                                               :Water_01 ;
+                      rdfs:label "MTMS Sol Formation (Sample H)"@en ;
+                      <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Sol_H .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_G
+:MTMS_Sol_G rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Sol_H
+:MTMS_Sol_H rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/Sol> ;
+            rdfs:label "MTMS Sol (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_A
+:MTMS_Solvent_Exchange_A rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_A ;
+                         rdfs:label "MTMS Solvent Exchange (Sample A)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_A .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_B
+:MTMS_Solvent_Exchange_B rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_B ;
+                         rdfs:label "MTMS Solvent Exchange (Sample B)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_B .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_C
+:MTMS_Solvent_Exchange_C rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_C ;
+                         rdfs:label "MTMS Solvent Exchange (Sample C)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_C .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_D
+:MTMS_Solvent_Exchange_D rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_D ;
+                         rdfs:label "MTMS Solvent Exchange (Sample D)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_D .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_E
+:MTMS_Solvent_Exchange_E rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_E ;
+                         rdfs:label "MTMS Solvent Exchange (Sample E)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_E .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_F
+:MTMS_Solvent_Exchange_F rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_F ;
+                         rdfs:label "MTMS Solvent Exchange (Sample F)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_F .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_G
+:MTMS_Solvent_Exchange_G rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_G ;
+                         rdfs:label "MTMS Solvent Exchange (Sample G)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_G .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Solvent_Exchange_H
+:MTMS_Solvent_Exchange_H rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/SolventExchange> ;
+                         <https://w3id.org/gelmat/usesSubstance> :MTMS_Hydrogel_H ;
+                         rdfs:label "MTMS Solvent Exchange (Sample H)"@en ;
+                         <https://w3id.org/gelmat/generatesIntermediate> :MTMS_Alcogel_H .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_A
+:MTMS_Synthesis_Sample_A rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_A ,
+                                                                      :MTMS_Drying_A ,
+                                                                      :MTMS_Gelation_A ,
+                                                                      :MTMS_Sol_Formation_A ,
+                                                                      :MTMS_Solvent_Exchange_A ;
+                         rdfs:label "MTMS Synthesis (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_B
+:MTMS_Synthesis_Sample_B rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_B ,
+                                                                      :MTMS_Drying_B ,
+                                                                      :MTMS_Gelation_B ,
+                                                                      :MTMS_Sol_Formation_B ,
+                                                                      :MTMS_Solvent_Exchange_B ;
+                         rdfs:label "MTMS Synthesis (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_C
+:MTMS_Synthesis_Sample_C rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_C ,
+                                                                      :MTMS_Drying_C ,
+                                                                      :MTMS_Gelation_C ,
+                                                                      :MTMS_Sol_Formation_C ,
+                                                                      :MTMS_Solvent_Exchange_C ;
+                         rdfs:label "MTMS Synthesis (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_D
+:MTMS_Synthesis_Sample_D rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_D ,
+                                                                      :MTMS_Drying_D ,
+                                                                      :MTMS_Gelation_D ,
+                                                                      :MTMS_Sol_Formation_D ,
+                                                                      :MTMS_Solvent_Exchange_D ;
+                         rdfs:label "MTMS Synthesis (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_E
+:MTMS_Synthesis_Sample_E rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_E ,
+                                                                      :MTMS_Drying_E ,
+                                                                      :MTMS_Gelation_E ,
+                                                                      :MTMS_Sol_Formation_E ,
+                                                                      :MTMS_Solvent_Exchange_E ;
+                         rdfs:label "MTMS Synthesis (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_F
+:MTMS_Synthesis_Sample_F rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_F ,
+                                                                      :MTMS_Drying_F ,
+                                                                      :MTMS_Gelation_F ,
+                                                                      :MTMS_Sol_Formation_F ,
+                                                                      :MTMS_Solvent_Exchange_F ;
+                         rdfs:label "MTMS Synthesis (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_G
+:MTMS_Synthesis_Sample_G rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_G ,
+                                                                      :MTMS_Drying_G ,
+                                                                      :MTMS_Gelation_G ,
+                                                                      :MTMS_Sol_Formation_G ,
+                                                                      :MTMS_Solvent_Exchange_G ;
+                         rdfs:label "MTMS Synthesis (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Synthesis_Sample_H
+:MTMS_Synthesis_Sample_H rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/gelmat/AerogelSynthesis> ;
+                         <http://purl.obolibrary.org/obo/BFO_0000051> :MTMS_Aging_H ,
+                                                                      :MTMS_Drying_H ,
+                                                                      :MTMS_Gelation_H ,
+                                                                      :MTMS_Sol_Formation_H ,
+                                                                      :MTMS_Solvent_Exchange_H ;
+                         rdfs:label "MTMS Synthesis (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_A
+:MTMS_Wet_Gel_A rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_B
+:MTMS_Wet_Gel_B rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_C
+:MTMS_Wet_Gel_C rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_D
+:MTMS_Wet_Gel_D rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_E
+:MTMS_Wet_Gel_E rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_F
+:MTMS_Wet_Gel_F rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample F)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_G
+:MTMS_Wet_Gel_G rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample G)"@en .
+
+
+###  https://w3id.org/gelmat/data/MTMS_Wet_Gel_H
+:MTMS_Wet_Gel_H rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/WetGel> ;
+                rdfs:label "MTMS Wet Gel (Sample H)"@en .
+
+
+###  https://w3id.org/gelmat/data/Methanol_01
+:Methanol_01 rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/gelmat/Methanol> ;
+             rdfs:label "Methanol"@en .
+
+
+###  https://w3id.org/gelmat/data/Oven
+:Oven rdf:type owl:NamedIndividual ,
+               <https://w3id.org/gelmat/Oven> ;
+      rdfs:label "Oven"@en .
+
+
+###  https://w3id.org/gelmat/data/Oxalic_Acid_01
+:Oxalic_Acid_01 rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/gelmat/Acid> ;
+                rdfs:label "Oxalic Acid"@en .
+
+
+###  https://w3id.org/gelmat/data/RSquared_E
+:RSquared_E rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/gelmat/CoefficientOfDetermination> ;
+            <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Gelation_E ;
+            <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :Val_RSquared_E ;
+            rdfs:label "R^2 (Sample E)"@en .
+
+
+###  https://w3id.org/gelmat/data/Sol_Formation_VolumeRatio_A
+:Sol_Formation_VolumeRatio_A rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/gelmat/VolumeRatio> ;
+                             <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_A ;
+                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to10to4to4 ;
+                             <https://w3id.org/gelmat/hasRatioComponent> :Ammonium_Hydroxide_01 ,
+                                                                          :MTMS_01 ,
+                                                                          :Methanol_01 ,
+                                                                          :Oxalic_Acid_01 ;
+                             rdfs:comment "Overall volume ratio of synthesis reagents MTMS:MeOH:NH4OH(10M):C2H2O4(0.01M) for Sample A"@en ;
+                             rdfs:label "Sol Formation Overall Volume Ratio (Sample A)"@en .
+
+
+###  https://w3id.org/gelmat/data/Sol_Formation_VolumeRatio_B
+:Sol_Formation_VolumeRatio_B rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/gelmat/VolumeRatio> ;
+                             <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_B ;
+                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to15to4to4 ;
+                             <https://w3id.org/gelmat/hasRatioComponent> :Ammonium_Hydroxide_01 ,
+                                                                          :MTMS_01 ,
+                                                                          :Methanol_01 ,
+                                                                          :Oxalic_Acid_01 ;
+                             rdfs:comment "Overall volume ratio for Sample B"@en ;
+                             rdfs:label "Sol Formation Overall Volume Ratio (Sample B)"@en .
+
+
+###  https://w3id.org/gelmat/data/Sol_Formation_VolumeRatio_C
+:Sol_Formation_VolumeRatio_C rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/gelmat/VolumeRatio> ;
+                             <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_C ;
+                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to20to4to4 ;
+                             <https://w3id.org/gelmat/hasRatioComponent> :Ammonium_Hydroxide_01 ,
+                                                                          :MTMS_01 ,
+                                                                          :Methanol_01 ,
+                                                                          :Oxalic_Acid_01 ;
+                             rdfs:comment "Overall volume ratio for Sample C"@en ;
+                             rdfs:label "Sol Formation Overall Volume Ratio (Sample C)"@en .
+
+
+###  https://w3id.org/gelmat/data/Sol_Formation_VolumeRatio_D
+:Sol_Formation_VolumeRatio_D rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/gelmat/VolumeRatio> ;
+                             <http://purl.obolibrary.org/obo/RO_0000052> :MTMS_Sol_D ;
+                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> :_1to25to4to4 ;
+                             <https://w3id.org/gelmat/hasRatioComponent> :Ammonium_Hydroxide_01 ,
+                                                                          :MTMS_01 ,
+                                                                          :Methanol_01 ,
+                                                                          :Oxalic_Acid_01 ;
+                             rdfs:comment "Overall volume ratio for Sample D"@en ;
+                             rdfs:label "Sol Formation Overall Volume Ratio (Sample D)"@en .
+
+
+###  https://w3id.org/gelmat/data/Supercritical_Dryer
+:Supercritical_Dryer rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/gelmat/SupercriticalDryer> ;
+                     rdfs:label "Supercritical dryer"@en .
+
+
+###  https://w3id.org/gelmat/data/Syringe_Pump_01
+:Syringe_Pump_01 rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/gelmat/SyringePump> ;
+                 rdfs:comment "Set to a dosing rate of 60 ml/h (see FlowRate_01)"@en ;
+                 rdfs:label "Syringe Pump"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Activation_Energy_E
+:Val_Activation_Energy_E rdf:type owl:NamedIndividual ,
+                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerMole> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "35450.0"^^xsd:double ;
+                         rdfs:label "35450 J/mol"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Activation_Energy_F
+:Val_Activation_Energy_F rdf:type owl:NamedIndividual ,
+                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerMole> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "29900.0"^^xsd:double ;
+                         rdfs:label "29900 J/mol"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Activation_Energy_G
+:Val_Activation_Energy_G rdf:type owl:NamedIndividual ,
+                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerMole> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "33290.0"^^xsd:double ;
+                         rdfs:label "33290 J/mol"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Activation_Energy_H
+:Val_Activation_Energy_H rdf:type owl:NamedIndividual ,
+                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerMole> ;
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "28890.0"^^xsd:double ;
+                         rdfs:label "28890 J/mol"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Arrhenius_Constant_E
+:Val_Arrhenius_Constant_E rdf:type owl:NamedIndividual ,
+                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "244.86"^^xsd:double ;
+                          rdfs:label "244.86"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Arrhenius_Constant_F
+:Val_Arrhenius_Constant_F rdf:type owl:NamedIndividual ,
+                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "51.15"^^xsd:double ;
+                          rdfs:label "51.15"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Arrhenius_Constant_G
+:Val_Arrhenius_Constant_G rdf:type owl:NamedIndividual ,
+                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "272.73"^^xsd:double ;
+                          rdfs:label "272.73"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_Arrhenius_Constant_H
+:Val_Arrhenius_Constant_H rdf:type owl:NamedIndividual ,
+                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "72.39"^^xsd:double ;
+                          rdfs:label "72.39"@en .
+
+
+###  https://w3id.org/gelmat/data/Val_RSquared_E
+:Val_RSquared_E rdf:type owl:NamedIndividual ,
+                         <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "0.95"^^xsd:double ;
+                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> ;
+                rdfs:label "0.95"@en .
+
+
+###  https://w3id.org/gelmat/data/Water_01
+:Water_01 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/gelmat/Water> ;
+          rdfs:label "Water"@en .
+
+
+###  https://w3id.org/gelmat/data/_100C
+:_100C rdf:type owl:NamedIndividual ,
+                <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin> ;
+       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "373.15"^^xsd:double ;
+       rdfs:label "373.15 K"@en .
+
+
+###  https://w3id.org/gelmat/data/_11_33
+:_11_33 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "11.33"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "11.33" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "11.33"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_12_94
+:_12_94 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "12.94"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "12.94" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "12.94"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_1to10
+:_1to10 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "1:10"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "1:10" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "0.1"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_1to10to4to4
+:_1to10to4to4 rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/RatioValue> ;
+              rdfs:label "1:10:4:4"@en ;
+              <https://w3id.org/gelmat/hasRatioString> "1:10:4:4" .
+
+
+###  https://w3id.org/gelmat/data/_1to15
+:_1to15 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "1:15"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "1:15" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "0.066667"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_1to15to4to4
+:_1to15to4to4 rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/RatioValue> ;
+              rdfs:label "1:15:4:4"@en ;
+              <https://w3id.org/gelmat/hasRatioString> "1:15:4:4" .
+
+
+###  https://w3id.org/gelmat/data/_1to20
+:_1to20 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "1:20"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "1:20" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "0.05"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_1to20to4to4
+:_1to20to4to4 rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/RatioValue> ;
+              rdfs:label "1:20:4:4"@en ;
+              <https://w3id.org/gelmat/hasRatioString> "1:20:4:4" .
+
+
+###  https://w3id.org/gelmat/data/_1to25
+:_1to25 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "1:25"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "1:25" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "0.04"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_1to25to4to4
+:_1to25to4to4 rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/gelmat/RatioValue> ;
+              rdfs:label "1:25:4:4"@en ;
+              <https://w3id.org/gelmat/hasRatioString> "1:25:4:4" .
+
+
+###  https://w3id.org/gelmat/data/_48h
+:_48h rdf:type owl:NamedIndividual ,
+               <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time> ;
+      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "172800.0"^^xsd:double ;
+      rdfs:label "172800 s"@en .
+
+
+###  https://w3id.org/gelmat/data/_50C
+:_50C rdf:type owl:NamedIndividual ,
+               <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin> ;
+      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "323.15"^^xsd:double ;
+      rdfs:label "323.15 K"@en .
+
+
+###  https://w3id.org/gelmat/data/_59_75
+:_59_75 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/gelmat/RatioValue> ;
+        rdfs:label "59.75"@en ;
+        <https://w3id.org/gelmat/hasRatioString> "59.75" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "59.75"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_8_09
+:_8_09 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/gelmat/RatioValue> ;
+       rdfs:label "8.09"@en ;
+       <https://w3id.org/gelmat/hasRatioString> "8.09" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "8.09"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  https://w3id.org/gelmat/data/_9_71
+:_9_71 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/gelmat/RatioValue> ;
+       rdfs:label "9.71"@en ;
+       <https://w3id.org/gelmat/hasRatioString> "9.71" ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "9.71"^^xsd:double ;
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/one> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
