@@ -61,7 +61,7 @@ More example queries are in [`docs/general_competency_questions.md`](docs/genera
 ## Contributors
 
 - **Prakul Pandit**, Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne. [ORCID 0000-0002-1343-3046](https://orcid.org/0000-0002-1343-3046)
-- **Antoni Dudij**, Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne
+- **Antoni Dudij**, Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne [ORCID 0009-0001-2543-8610](https://orcid.org/0009-0001-2543-8610)
 - **Barbara Milow**, Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne. [ORCID 0000-0002-6350-7728](https://orcid.org/0000-0002-6350-7728)
 
 ## Citation
