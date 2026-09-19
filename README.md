@@ -15,7 +15,7 @@ The ontology defines 299 classes, 57 object properties, and 9 datatype propertie
 | Prefix | Ontology | Used for |
 |--------|----------|----------|
 | `pmat:` | [PolyMat](https://w3id.org/polymat/) | Base ontology, extended by Gelmat (imported) |
-| `om:` | [OM-2](http://www.ontology-of-units-of-measure.org/) (Rijgersberg, Willems) | Units of measure and quantities (imported) |
+| `om:` | [OM-2](http://www.ontology-of-units-of-measure.org/)| Units of measure and quantities (imported) |
 | `obo:` | [BFO](https://basic-formal-ontology.org/), [RO](https://obofoundry.org/ontology/ro.html), [ChEBI](https://www.ebi.ac.uk/chebi/) | Upper-level structure, relations, chemical entities |
 | `prov:` | [PROV-O](https://www.w3.org/TR/prov-o/) | Provenance and roles |
 
