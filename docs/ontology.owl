@@ -24,7 +24,7 @@
         <terms:author>Antoni Dudij, Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne, Germany</terms:author>
         <terms:author>Barbara Milow (https://orcid.org/0000-0002-6350-7728), Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne, Germany</terms:author>
         <terms:author>Prakul Pandit (https://orcid.org/0000-0002-1343-3046), Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne, Germany</terms:author>
-        <terms:bibliographicCitation>Pandit, P., Dudij, A., &amp; Milow, B. (2026). Gelmat: An Ontology for Sol-Gel Materials (Version 1.1.0). German Aerospace Center (DLR). https://doi.org/10.5281/zenodo.22915206</terms:bibliographicCitation>
+        <terms:bibliographicCitation>Pandit, P., Dudij, A., &amp; Milow, B. (2026). Gelmat: An Ontology for Sol-Gel Materials (Version 1.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22915206</terms:bibliographicCitation>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-12</terms:created>
         <terms:license rdf:resource="https://spdx.org/licenses/CC-BY-NC-4.0.html"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-14</terms:modified>

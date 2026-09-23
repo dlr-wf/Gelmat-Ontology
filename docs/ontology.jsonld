@@ -2012,7 +2012,7 @@
     "@value" : "Prakul Pandit (https://orcid.org/0000-0002-1343-3046), Institute for Frontier Materials on Earth and in Space, German Aerospace Center (DLR), Cologne, Germany"
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Pandit, P., Dudij, A., & Milow, B. (2026). Gelmat: An Ontology for Sol-Gel Materials (Version 1.1.0). German Aerospace Center (DLR). https://doi.org/10.5281/zenodo.22915206"
+    "@value" : "Pandit, P., Dudij, A., & Milow, B. (2026). Gelmat: An Ontology for Sol-Gel Materials (Version 1.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22915206"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
